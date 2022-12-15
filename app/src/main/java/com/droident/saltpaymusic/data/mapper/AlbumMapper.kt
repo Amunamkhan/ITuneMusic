@@ -5,16 +5,6 @@ import com.droident.saltpaymusic.data.remote.dto.*
 import com.droident.saltpaymusic.domain.model.Album
 
 
-//fun AlbumDto.toAlbum(): Album {
-//    return Album(name = name.label,
-//        author = artist.label,
-//        price = price.label,
-//        currency = ,
-//        image = image[image.size - 1].label,
-//
-//    )
-//}
-
 fun AlbumEntity.toAlbum(): Album {
     return Album(
         name = name,
