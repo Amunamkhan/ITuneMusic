@@ -6,7 +6,7 @@ sealed class AlbumListingsEvent {
     object Refresh: AlbumListingsEvent()
     // handle search query
     data class OnSearchQueryChange(val query: String): AlbumListingsEvent()
-    // handle favorite functionalty
+    // handle favorite functionality
     data class toggleFavourite(val albumId: Int,val isFavourite: Boolean): AlbumListingsEvent()
 
 }
